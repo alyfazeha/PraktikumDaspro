@@ -22,9 +22,18 @@ public class Selection2Exp205 {
         if (totalAngle == 180) {
             if (angle1 == 90 || angle2 == 90 || angle3 == 90) {
                 System.out.println("Right triangle");
-            } else
+            } else if (angle1 == 60 && angle2 == 60 && angle3 == 60) {
+                System.out.println("Equilateral triangle");
+            } else if (angle1 == angle2 && angle3 == 180 - (2 * angle1)) {
+                System.out.println("isosceles triangle");
+            } else if (angle2 == angle3 && angle1 == 180 - (2 * angle2)) {
+                System.out.println("isosceles triangle");
+            } else if (angle3 == angle1 && angle2 == 180 - (2 * angle3)) {
+                System.out.println("isosceles triangle");
+            } else 
                 System.out.println("Not a right triangle");
-        } else
+        } else 
             System.out.println("Not a triangle");
     }
 }
+
