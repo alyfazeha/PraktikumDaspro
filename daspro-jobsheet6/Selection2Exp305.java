@@ -27,7 +27,7 @@ public class Selection2Exp305 {
                 netSalary = (int) (income - (tax*income));
                 System.out.println("Nett salary = " + netSalary);
 
-        } else if (category.equalsIgnoreCase(anotherString = "businessman")) {
+        } else if (category.equals(anotherString = "businessman")) {
             if (income <= 2500000) {
                 tax = 0.15;
             } else if (income <= 3500000) {

@@ -56,6 +56,7 @@ public class assignment305 {
                 System.out.println("Price = Rp. 0");
             } else 
                 System.out.println("Price = Rp. 1.500.000");
-        } 
+        } else
+            System.out.println("Invalid input!!");
     }
 }
